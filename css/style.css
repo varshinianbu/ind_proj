@@ -64,32 +64,14 @@ nav {
     transform: translateX(-50%); /* Adjust the logo back to perfect center */
 }
 
-nav a {
-    text-decoration: none;
+nav a, ul a {
     color: #000;
     font-weight: bold;
     margin: 0 10px;
 }
 
-.container {
-    margin: 20px;
-}
-
-.clickable-section {
-    display: inline-block;
-    width: 150px;
-    height: 300px;
-    border: 2px solid #000;
-    text-align: center;
-    vertical-align: top;
-    margin: 0 20px;
-    padding: 10px;
-}
-
-.bear-container {
-    display: inline-block;
-    vertical-align: top;
-    margin: 0 20px;
+nav a {
+    text-decoration: none; 
 }
 
 .circle-container, .circle-container-two {
@@ -128,17 +110,17 @@ button {
     display: inline-block;
 }
 
-.circle, .nav-site a, .home-nav, button, footer a {
+.circle, .nav-site a, .home-nav, button, footer a, .click-img {
     transition: transform 0.3s ease-in-out;
 }
 
 .circle:hover, .circle:focus, .nav-site a:hover, .nav-site a:focus, .home-nav:hover, .home-nav:focus, footer a:hover, 
-footer a:focus {  
+footer a:focus, .click-img:hover, .click-img:focus {  
     transform: scale(1.1);
 }
 
 button:hover, button:focus, button:hover, button:focus, .facts:hover, .more-facts:hover, .details:hover, 
-.embedded-video:hover, .jellycat:hover, .spotify:hover {
+.embedded-video:hover, .jellycat:hover, .spotify:hover, .links:hover {
     transform: scale(1.03);
 }
 
@@ -151,15 +133,13 @@ button:hover, button:focus, button:hover, button:focus, .facts:hover, .more-fact
 }
 
 /* Apply common styles to containers */
-.facts, .more-facts, .details, .embedded-video, .jellycat, .spotify {
+.facts, .more-facts, .details, .embedded-video, .jellycat, .spotify, .links {
     transition: transform 0.3s ease, box-shadow 0.3s ease; 
     border-radius: 10px; 
 }
 
-/* hello*/
-
 /* Hover effect for scaling and box shadow */
-.facts:hover, .more-facts:hover, .details:hover, .embedded-video:hover, .jellycat:hover, .spotify:hover {
+.facts:hover, .more-facts:hover, .details:hover, .embedded-video:hover, .jellycat:hover, .spotify:hover, .links:hover {
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Add a stronger shadow */
 }
 
@@ -198,3 +178,47 @@ footer a {
     height: 550px;
     border-radius: 20px; 
 }
+
+.bearthink {
+    width: 338px;
+    height: 453px; 
+}
+
+.thinkcloud {
+    width: 366px; 
+    height: 243px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr; /* Three columns: left clickable section, bear area, right clickable section */
+    align-items: center; /* Align items vertically */
+    gap: 20px; /* Add spacing between columns */
+}
+
+.click-img{
+    width: 180px; 
+    height: 130px;
+}
+
+.clickable-section {
+    display: grid; 
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center; /* Center content horizontally */
+    gap: 10px; /* Space between each item */
+}
+
+.cloud-container {
+    position: relative; /* Ensure the thought bubble container is a positioning context */
+}
+
+.overlay-image {
+    position: absolute;
+    top: 40%; /* Adjust this value to align the image vertically */
+    left: 60%; /* Adjust this value to align the image horizontally */
+    transform: translate(-50%, -50%); /* Center the overlay image */
+    pointer-events: auto; /* Make sure clicks pass through the overlay image */
+    width: 180px; 
+    height: 130px;
+}
+
