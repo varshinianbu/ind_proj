@@ -156,6 +156,8 @@ button:hover, button:focus, button:hover, button:focus, .facts:hover, .more-fact
     border-radius: 10px; 
 }
 
+/* hello*/
+
 /* Hover effect for scaling and box shadow */
 .facts:hover, .more-facts:hover, .details:hover, .embedded-video:hover, .jellycat:hover, .spotify:hover {
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Add a stronger shadow */
