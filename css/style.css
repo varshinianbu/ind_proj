@@ -1,0 +1,198 @@
+body {
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px; 
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    padding: 10px 20px;
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between;
+    position: sticky; 
+    top: 0;
+    z-index: 100;
+}
+
+.index-body {
+    background-color:  #ecdada;
+}
+
+.index-nav, .index-footer {
+    background-color: #ad907a;
+}
+
+.panda-body {
+    background-color: #f4f4f4;
+}
+
+.panda-nav, .panda-footer {
+    background-color: #e0e0e0;
+}
+
+.polar-body {
+    background-color: #e6f0f4;
+}
+
+.polar-nav, .polar-footer {
+    background-color: #a5d8eb;
+}
+
+.cinnamon-body {
+    background-color: #f5dec8;
+}
+
+.cinnamon-nav, .cinnamon-footer {
+    background-color: #ba9f87;
+}
+
+.nav-site:last-of-type {
+    margin-right: auto; 
+}
+
+.home-nav {
+    margin-left: auto; 
+}
+
+.logo {
+    width: 50px;
+    height: 30px;
+    position: absolute; /* Absolute positioning to center the logo */
+    left: 50%; /* Move the logo to the center of the nav */
+    transform: translateX(-50%); /* Adjust the logo back to perfect center */
+}
+
+nav a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+.container {
+    margin: 20px;
+}
+
+.clickable-section {
+    display: inline-block;
+    width: 150px;
+    height: 300px;
+    border: 2px solid #000;
+    text-align: center;
+    vertical-align: top;
+    margin: 0 20px;
+    padding: 10px;
+}
+
+.bear-container {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 20px;
+}
+
+.circle-container, .circle-container-two {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* Six equal columns */
+    gap: 20px; /* Add spacing between items */
+    justify-content: center; /* Center the grid horizontally */
+    margin: 20px 0; /* Add vertical margin */
+    width: fit-content; /* Shrink the grid to fit its content */
+    margin-left: auto; /* Center horizontally */
+    margin-right: auto; /* Center horizontally */
+}
+
+.circle-container-two {
+    display: none; 
+}
+
+button {
+    background-color: inherit;
+    border-radius: 20px;  
+    padding: 6px 10px; 
+    font-weight: bold; 
+}
+
+.circle {
+    width: 150px;
+    height: 150px;
+    border: 3px solid #4b4343;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-site a, .home-nav, footer a {
+    display: inline-block;
+}
+
+.circle, .nav-site a, .home-nav, button, footer a {
+    transition: transform 0.3s ease-in-out;
+}
+
+.circle:hover, .circle:focus, .nav-site a:hover, .nav-site a:focus, .home-nav:hover, .home-nav:focus, footer a:hover, 
+footer a:focus {  
+    transform: scale(1.1);
+}
+
+button:hover, button:focus, button:hover, button:focus, .facts:hover, .more-facts:hover, .details:hover, 
+.embedded-video:hover, .jellycat:hover, .spotify:hover {
+    transform: scale(1.03);
+}
+
+
+.facts, .details, .video, .more-facts, .links {
+    margin: 20px auto;
+    padding: 10px;
+    width: 80%;
+    text-align: left;
+}
+
+/* Apply common styles to containers */
+.facts, .more-facts, .details, .embedded-video, .jellycat, .spotify {
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    border-radius: 10px; 
+}
+
+/* Hover effect for scaling and box shadow */
+.facts:hover, .more-facts:hover, .details:hover, .embedded-video:hover, .jellycat:hover, .spotify:hover {
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Add a stronger shadow */
+}
+
+footer {
+    background-color: #f4f4f4;
+    padding: 10px; 
+    bottom: 0;
+    box-sizing: border-box; /* Ensures padding is included in the total width */
+    text-align: right; /* Align text to the right */
+}
+
+footer a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #000;
+    margin-right: 10px; 
+}
+
+.embedded-video {
+    width: 800px; 
+    height: 500px;
+}
+
+.video {
+    text-align: center;
+}
+
+.spotify{
+    border-radius: 12px;   
+    width: 800px; 
+    height: 352px;
+}
+
+.jellycat{
+    width: 450px; 
+    height: 550px;
+    border-radius: 20px; 
+}
