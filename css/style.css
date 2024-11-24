@@ -194,6 +194,7 @@ footer a {
 }
 
 .thinkcloud {
+    display:none;
     width: 366px; 
     height: 243px;
 }
@@ -211,7 +212,7 @@ footer a {
 }
 
 .clickable-section {
-    display: grid; 
+    display: none; 
     grid-template-columns: repeat(1, 1fr);
     justify-items: center; /* Center content horizontally */
     gap: 10px; /* Space between each item */
@@ -236,7 +237,7 @@ footer a {
         display: block;
     }
 
-    #see-more {
+    #see-more, .thinkcloud{
         display: inline-block; 
     }
 
@@ -244,7 +245,7 @@ footer a {
         display: none;
     }
 
-    .circle-container {
+    .circle-container, .clickable-section {
         display: grid; 
     }
 
