@@ -145,7 +145,7 @@ button:hover, button:focus, button:hover, button:focus, .facts:hover, .more-fact
 
 /* Apply common styles to containers */
 .facts, .more-facts, .details, .embedded-video, .jellycat, .spotify, .links {
-    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    transition: transform 0.4s ease, box-shadow 0.4s ease; 
     border-radius: 10px; 
 }
 
@@ -209,8 +209,9 @@ footer a {
 }
 
 .click-img{
-    width: 180px; 
+    width: 150px; 
     height: 130px;
+    padding: 5px;
 }
 
 .clickable-section {
@@ -270,4 +271,47 @@ footer a {
         height: 453px; 
     }
 }
-@media (min-width: 1024px) {}
+
+@media (prefers-reduced-motion: reduce) {
+    .circle, .nav-site a, .home-nav, button, footer a, .click-img, .facts, .more-facts, .details, .embedded-video, 
+    .jellycat, .spotify, .links {
+        transition: none;
+    }
+    
+    .circle:hover, .circle:focus, .nav-site a:hover, .nav-site a:focus, .home-nav:hover, .home-nav:focus, footer a:hover, 
+    footer a:focus, .click-img:hover, .click-img:focus, button:hover, button:focus, button:hover, button:focus, .facts:hover, 
+    .more-facts:hover, .details:hover, .embedded-video:hover, .jellycat:hover, .spotify:hover, .links:hover {
+        transform: none;
+    }
+    
+    /* Hover effect for scaling and box shadow */
+    .facts:hover, .more-facts:hover, .details:hover, .embedded-video:hover, .jellycat:hover, .spotify:hover, .links:hover {
+        box-shadow: none; /* Add a stronger shadow */
+    }
+
+    .spotify, .reduce{
+        display: none; 
+    }
+}
+
+@media (prefers-color-scheme: dark){
+    .logo {
+        filter: invert(1); /* Invert the logo colors */
+    }
+
+    .panda-body {
+        background-color: #414040; 
+    }
+
+    .panda-body, .panda-see, #panda-nav, #panda-nav a, #panda-home, .panda-link a, #panda-footer{
+        color: #ffffff; /* Change the font color to white */
+    }
+
+    .panda-nav, .panda-footer {
+        background-color: #1f1f1f; /* Set a darker shade for the nav and footer */
+    }
+
+    button {
+        border-color: #ffffff;
+    }
+}

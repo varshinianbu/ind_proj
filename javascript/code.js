@@ -18,6 +18,9 @@ document.addEventListener("DOMContentLoaded", () => {
     const button = document.querySelector("#see-more"); // Select the button
     const nav = document.querySelector("nav"); // Select the nav element
 
+    // Check if the user has prefers-reduced-motion enabled
+    const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
     if (button && nav) {
         // Get the computed background color of the nav
         const navBackgroundColor = getComputedStyle(nav).backgroundColor;
@@ -25,23 +28,29 @@ document.addEventListener("DOMContentLoaded", () => {
         // Save the button's original background color
         const originalButtonColor = getComputedStyle(button).backgroundColor;
 
-        // Update button background on hover
-        button.addEventListener("mouseover", () => {
-            button.style.backgroundColor = navBackgroundColor;
-        });
+        // Add hover and focus behavior only if reduced motion is not preferred
+        if (!prefersReducedMotion) {
+            // Update button background on hover
+            button.addEventListener("mouseover", () => {
+                button.style.backgroundColor = navBackgroundColor;
+            });
 
-        button.addEventListener("mouseout", () => {
-            button.style.backgroundColor = originalButtonColor; // Reset to original color
-        });
+            button.addEventListener("mouseout", () => {
+                button.style.backgroundColor = originalButtonColor; // Reset to original color
+            });
 
-        // Update button background on focus
-        button.addEventListener("focus", () => {
-            button.style.backgroundColor = navBackgroundColor;
-        });
+            // Update button background on focus
+            button.addEventListener("focus", () => {
+                button.style.backgroundColor = navBackgroundColor;
+            });
 
-        button.addEventListener("blur", () => {
-            button.style.backgroundColor = originalButtonColor; // Reset to original color
-        });
+            button.addEventListener("blur", () => {
+                button.style.backgroundColor = originalButtonColor; // Reset to original color
+            });
+        } else {
+            // For prefers-reduced-motion: Add simple visual feedback without motion
+            button.style.transition = "none"; // Disable transitions
+        }
     }
 });
 

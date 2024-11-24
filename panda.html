@@ -8,13 +8,13 @@
     <title>panda bear</title>
     <!-- Navigation Bar -->
     <nav class="panda-nav">
-        <div class="nav-site">
+        <div class="nav-site" id="panda-nav">
             <a href="panda.html">panda</a> |
             <a href="polar.html">polar</a> |
             <a href="cinnamon.html">cinnamon</a>
         </div>
         <img class="logo" src="images/bearlogo.png" alt="silly bear logo face">
-        <a class="home-nav" href="index.html">home</a>
+        <a class="home-nav" id="panda-home" href="index.html">home</a>
     </nav> 
     <header>
         <h1>about the panda bear!</h1>
@@ -56,7 +56,7 @@
                 <img class="circle" src="images2/panda55.jpg" alt="baby panda falls of stage">
                 <img class="circle" src="images2/panda66.jpg" alt="two pandas laying on each other">
             </div>
-            <button id="see-more">see more!</button>
+            <button class="panda-see" id="see-more">see more!</button>
             <div class="facts">
                 <h2>Panda Info</h2>
                 <p>
@@ -107,7 +107,7 @@
                 </p>
                 <p>
                     Source:
-                    <ul>
+                    <ul class="panda-link">
                         <li><a href="https://kids.nationalgeographic.com/animals/mammals/facts/giant-panda">National Geographic</a></li>
                         <li><a href="https://www.worldwildlife.org/species/giant-panda">World Wildlife Fund</a></li>
                     </ul>
@@ -141,7 +141,7 @@
                 </ol>
                 <p>
                     Source:
-                    <ul>
+                    <ul class="panda-link">
                         <li><a href="https://kids.nationalgeographic.com/animals/mammals/facts/giant-panda">National Geographic</a></li>
                         <li><a href="https://www.worldwildlife.org/species/giant-panda">World Wildlife Fund</a></li>
                     </ul>
@@ -149,7 +149,7 @@
             </div>
             <div class="links">
                 <h2>Panda In Daily Life</h2>
-                <h3>Panda as an Artist</h3>
+                <h3 class="reduce">Panda as an Artist</h3>
                 <div class="video">
                     <iframe 
                         class="spotify" 
@@ -159,7 +159,7 @@
                     </iframe>
                 </div>
                 
-                <h3>Panda as a Song</h3>
+                <h3 class="reduce">Panda as a Song</h3>
                 <div class="video">
                     <iframe 
                         class="spotify" 
@@ -179,7 +179,7 @@
 
     <!-- Footer -->
     <footer class="panda-footer">
-        <a href="panda.html">Back to top!</a>
+        <a id="panda-footer" href="panda.html">Back to top!</a>
     </footer>
     <script src="javascript/code.js"></script>
     <script src="javascript/phone.js"></script>
