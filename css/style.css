@@ -189,8 +189,8 @@ footer a {
 }
 
 .bearthink {
-    width: 338px;
-    height: 453px; 
+    width: 438px;
+    height: 653px; 
 }
 
 .thinkcloud {
@@ -261,6 +261,11 @@ footer a {
     .jellycat{
         width: 450px; 
         height: 550px;
+    }
+
+    .bearthink {
+        width: 338px;
+        height: 453px; 
     }
 }
 @media (min-width: 1024px) {}
