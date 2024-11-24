@@ -76,7 +76,6 @@ nav a {
 }
 
 .circle-container, .circle-container-two {
-    display: grid;
     grid-template-columns: repeat(6, 1fr); /* Six equal columns */
     gap: 20px; /* Add spacing between items */
     justify-content: center; /* Center the grid horizontally */
@@ -86,7 +85,16 @@ nav a {
     margin-right: auto; /* Center horizontally */
 }
 
-.circle-container-two {
+.phone-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    gap: 20px; 
+    position: relative;
+    margin: auto; 
+}
+
+.circle-container, .circle-container-two, #see-more {
     display: none; 
 }
 
@@ -97,7 +105,7 @@ button {
     font-weight: bold; 
 }
 
-.circle {
+.circle, .mySlides {
     width: 150px;
     height: 150px;
     border: 3px solid #4b4343;
@@ -226,6 +234,18 @@ footer a {
 @media (min-width: 720px) {
     .logo {
         display: block;
+    }
+
+    #see-more {
+        display: inline-block; 
+    }
+
+    .phone-container {
+        display: none;
+    }
+
+    .circle-container {
+        display: grid; 
     }
 }
 @media (min-width: 1024px) {}

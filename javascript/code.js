@@ -15,7 +15,7 @@ document.getElementById("see-more").addEventListener("click", function () {
 });
 
 document.addEventListener("DOMContentLoaded", () => {
-    const button = document.querySelector("button"); // Select the button
+    const button = document.querySelector("#see-more"); // Select the button
     const nav = document.querySelector("nav"); // Select the nav element
 
     if (button && nav) {
@@ -47,11 +47,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
 const factsParagraphs = document.querySelectorAll('.facts p');
 
-    factsParagraphs.forEach(paragraph => {
-        // Split the text at the colon (:)
-        const parts = paragraph.textContent.split(':');
-        if (parts.length > 1) {
-            // Wrap the first part (before the colon) in <strong> tags
-            paragraph.innerHTML = `<strong>${parts[0]}:</strong>${parts[1]}`;
-        }
-    });
+factsParagraphs.forEach(paragraph => {
+    // Split the text at the colon (:)
+    const parts = paragraph.textContent.split(':');
+    if (parts.length > 1) {
+        // Wrap the first part (before the colon) in <strong> tags
+        paragraph.innerHTML = `<strong>${parts[0]}:</strong>${parts[1]}`;
+    }
+});
