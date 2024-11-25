@@ -3,7 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">    <link rel="stylesheet" href="css/style.css">
+    <!-- Link to Google Fonts for Nunito font -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">    
+    <!-- Link to CSS stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Page title -->
     <title>polar bear</title>
     <!-- Navigation Bar -->
     <nav class="polar-nav">
@@ -15,14 +19,16 @@
         <img class="logo" src="images/bearlogo.png" alt="silly bear logo face">
         <a class="home-nav" href="index.html">home</a>
     </nav> 
+    <!-- Header Section -->
     <header>
         <h1>about the polar bear!</h1>
     </header>
 </head>
 <body class="polar-body">
-    <!-- Section 1 -->
+    <!-- Main Content -->
     <main>
         <section id="info">
+            <!-- Image Slideshow for mobile ver. -->
             <div class="phone-container">
                 <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
                 <img class="mySlides" src="images/polar1.jpg" alt="polar bear says hi">
@@ -39,6 +45,7 @@
                 <img class="mySlides" src="images2/polar66.jpg" alt="baby polar rolling around">
                 <button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
             </div>
+            <!-- Image for desktop ver. -->
             <div class="circle-container">
                 <img class="circle" src="images/polar1.jpg" alt="polar bear says hi" tabindex="0">
                 <img class="circle" src="images/polar2.jpg" alt="baby polar bear" tabindex="0">
@@ -47,6 +54,7 @@
                 <img class="circle" src="images/polar5.jpg" alt="polar bear says hi two" tabindex="0">
                 <img class="circle" src="images/polar6.jpg" alt="baby polar bears playing" tabindex="0">
             </div>
+            <!-- Images for desktop ver. -->
             <div class="circle-container-two">
                 <img class="circle" src="images2/polar11.jpg" alt="polar bear walking" tabindex="0">
                 <img class="circle" src="images2/polar22.jpg" alt="baby polar bear sticks tongue out" tabindex="0">
@@ -55,7 +63,9 @@
                 <img class="circle" src="images2/polar55.jpg" alt="polar bear standing up on two legs" tabindex="0">
                 <img class="circle" src="images2/polar66.jpg" alt="baby polar rolling around" tabindex="0">
             </div>
+            <!-- Button to see more info for images -->
             <button id="see-more">see more!</button>
+            <!-- Polar Facts Container -->
             <div class="facts" tabindex="0">
                 <h2>Polar Info</h2>
                 <p>
@@ -86,6 +96,7 @@
                     Status: Vunerable 
                 </p>
             </div>
+            <!-- Polar Details Container -->
             <div class="details" tabindex="0">
                 <h2>Polar Details</h2>
                 <p>
@@ -116,13 +127,14 @@
                     </ul>
                 </p>
             </div>
+            <!-- Polar Youtube Embedded -->
             <div class="video" tabindex="0">
                 <iframe class="embedded-video" aria-label="panda video" src="https://www.youtube.com/embed/HmnKbBmYii8" allowfullscreen></iframe>
             </div>
         </section>
 
-        <!-- Section 2 -->
         <section id="more-info">
+            <!-- More Polar Facts Container -->
             <div class="more-facts" tabindex="0">
                 <h2>Polar Facts</h2>
                 <ol>
@@ -146,9 +158,11 @@
                     </ul>
                 </p>
             </div>
+            <!-- Polar Links Container -->
             <div class="links">
                 <h2>Polar In Daily Life</h2>
                 <h3 class="reduce">Polar as an Artist</h3>
+                <!-- Spotify Artist Embedded -->
                 <div class="video" tabindex="0">
                     <iframe 
                         class="spotify" 
@@ -158,6 +172,7 @@
                 </div>
                 
                 <h3 class="reduce">Polar as a Song</h3>
+                <!-- Spotify Song Embedded -->
                 <div class="video" tabindex="0">
                     <iframe 
                         class="spotify" 
@@ -167,6 +182,7 @@
                     </iframe>
                 </div>
                 <h3>Polar as a Jellycat</h3>
+                <!-- Jellycat Panda Linked -->
                 <div class="video" tabindex="0">
                     <a href="https://us.jellycat.com/perry-polar-bear/">
                         <img class="jellycat" src="images/jellycatpolar.jpg" alt="Jellycat Polar">
@@ -177,8 +193,9 @@
 
     <!-- Footer -->
     <footer class="polar-footer">
-        <a href="polar.html">Back to top!</a>
+        <a href="polar.html">back to top!</a>
     </footer>
+    <!-- Link to JavaScript files -->
     <script src="javascript/code.js"></script>
     <script src="javascript/phone.js"></script>
 </body>

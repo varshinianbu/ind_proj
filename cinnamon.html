@@ -3,7 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">    <link rel="stylesheet" href="css/style.css">
+    <!-- Link to Google Fonts for Nunito font -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">    
+    <!-- Link to CSS stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Page title -->
     <title>cinnamon bear</title>
     <!-- Navigation Bar -->
     <nav class="cinnamon-nav">
@@ -15,14 +19,16 @@
         <img class="logo" src="images/bearlogo.png" alt="silly bear logo face">
         <a class="home-nav" href="index.html">home</a>
     </nav> 
+    <!-- Header Section -->
     <header>
         <h1>about the cinnamon bear!</h1>
     </header>
 </head>
 <body class="cinnamon-body">
-    <!-- Section 1 -->
+    <!-- Main Content -->
     <main>
         <section id="info">
+            <!-- Image Slideshow for mobile ver. -->
             <div class="phone-container">
                 <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
                 <img class="mySlides" src="images/cinnamon1.jpg" alt="baby cinnamon bear">
@@ -39,6 +45,7 @@
                 <img class="mySlides" src="images2/cinnamon66.jpg" alt="three cinnamon bears looking">
                 <button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
             </div>
+            <!-- Images for desktop ver. -->
             <div class="circle-container">
                 <img class="circle" src="images/cinnamon1.jpg" alt="baby cinnamon bear" tabindex="0">
                 <img class="circle" src="images/cinnamon2.jpg" alt="big cinnamon bear" tabindex="0">
@@ -47,6 +54,7 @@
                 <img class="circle" src="images/cinnamon5.jpg" alt="sleepy cinnamon bear" tabindex="0">
                 <img class="circle" src="images/cinnamon6.jpg" alt="grown cinnamon bear" tabindex="0">
             </div>
+            <!-- Images for desktop ver. -->
             <div class="circle-container-two">
                 <img class="circle" src="images2/cinnamon11.jpg" alt="big cinnamon bear" tabindex="0">
                 <img class="circle" src="images2/cinnamon22.jpg" alt="cinnamon bear standing" tabindex="0">
@@ -55,7 +63,9 @@
                 <img class="circle" src="images2/cinnamon55.jpg" alt="two baby cinnamon bears walking" tabindex="0">
                 <img class="circle" src="images2/cinnamon66.jpg" alt="three cinnamon bears looking" tabindex="0">
             </div>
+            <!-- Button to see more info for images -->
             <button id="see-more">see more!</button>
+            <!-- Cinnamon Facts Container -->
             <div class="facts" tabindex="0">
                 <h2>Cinnamon Info</h2>
                 <p>
@@ -86,6 +96,7 @@
                     Status: Least Concern
                 </p>
             </div>
+            <!-- Cinnamon Details Container -->
             <div class="details" tabindex="0">
                 <h2> Cinnamon Details</h2>
                 <p>
@@ -113,13 +124,14 @@
                     </ul>
                 </p>
             </div>
+            <!-- Cinnamon Youtube Embedded -->
             <div class="video" tabindex="0">
                 <iframe class="embedded-video" aria-label="cinnamon video" src="https://www.youtube.com/embed/BQg2fuFrPAs" allowfullscreen></iframe>
             </div>
         </section>
 
-        <!-- Section 2 -->
         <section id="more-info">
+            <!-- More Cinnamon Facts Container -->
             <div class="more-facts" tabindex="0">
                 <h2>Cinnamon Facts</h2>
                 <ol>
@@ -144,9 +156,11 @@
                     </ul>
                 </p>
             </div>
+            <!-- Panda Links Container -->
             <div class="links">
                 <h2>Cinnamon In Daily Life</h2>
                 <h3 class="reduce">Cinnamon as an Artist</h3>
+                <!-- Spotify Artist Embedded-->
                 <div class="video" tabindex="0">
                     <iframe 
                         class="spotify" 
@@ -157,6 +171,7 @@
                 </div>
                 
                 <h3 class="reduce">Cinnamon as a Song</h3>
+                <!-- Spotify Song Embedded-->
                 <div class="video" tabindex="0">
                     <iframe 
                         class="spotify" 
@@ -166,6 +181,7 @@
                     </iframe>
                 </div>
                 <h3>Cinnamon as a Jellycat</h3>
+                <!-- Jellycat Cinnamon Linked -->
                 <div class="video" tabindex="0">
                     <a href="https://us.jellycat.com/wee-bear/">
                         <img class="jellycat" src="images/jellycatcinnamon.jpg" alt="Jellycat Cinnamon">
@@ -176,8 +192,9 @@
 
     <!-- Footer -->
     <footer class="cinnamon-footer">
-        <a href="cinnamon.html">Back to top!</a>
+        <a href="cinnamon.html">back to top!</a>
     </footer>
+    <!-- Link to Javascript files -->
     <script src="javascript/code.js"></script>
     <script src="javascript/phone.js"></script>
 </body>

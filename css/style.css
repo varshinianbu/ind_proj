@@ -1,317 +1,342 @@
+/* General body styling */
 body {
-    font-family: 'Nunito', sans-serif;
-    font-size: 18px; 
-    text-align: center;
-    margin: 0;
-    padding: 0;
+    font-family: 'Nunito', sans-serif; /* Sets the font family for the entire body */
+    font-size: 18px; /* Default font size */
+    text-align: center; /* Centers text alignment */
+    margin: 0; /* Removes default margin */
+    padding: 0; /* Removes default padding */
 }
 
+/* Navigation bar styling */
 nav {
-    padding: 10px 20px;
-    display: flex; 
-    align-items: center; 
-    justify-content: space-between;
-    position: sticky; 
-    top: 0;
-    z-index: 100;
+    padding: 10px 20px; /* Adds padding inside the nav bar */
+    display: flex; /* Uses flexbox layout */
+    align-items: center; /* Centers items vertically */
+    justify-content: space-between; /* Spaces items evenly across the nav */
+    position: sticky; /* Keeps the nav bar fixed at the top while scrolling */
+    top: 0; /* Sets the top position */
+    z-index: 100; /* Ensures the nav bar appears above other elements */
 }
 
+/* Background styling for different sections/pages */
 .index-body {
-    background-color:  #ecdada;
+    background-color: #ecdada; /* Light pink background for index page */
 }
 
 .index-nav, .index-footer {
-    background-color: #ad907a;
+    background-color: #ad907a; /* Brown background for nav and footer on index page */
 }
 
 .panda-body {
-    background-color: #f4f4f4;
+    background-color: #f4f4f4; /* Light gray background for panda section */
 }
 
 .panda-nav, .panda-footer {
-    background-color: #e0e0e0;
+    background-color: #e0e0e0; /* Light gray background for nav and footer in panda section */
 }
 
 .polar-body {
-    background-color: #e6f0f4;
+    background-color: #e6f0f4; /* Light blue background for polar section */
 }
 
 .polar-nav, .polar-footer {
-    background-color: #a5d8eb;
+    background-color: #a5d8eb; /* Sky blue background for nav and footer in polar section */
 }
 
 .cinnamon-body {
-    background-color: #f5dec8;
+    background-color: #f5dec8; /* Beige background for cinnamon section */
 }
 
 .cinnamon-nav, .cinnamon-footer {
-    background-color: #ba9f87;
+    background-color: #ba9f87; /* Light brown background for nav and footer in cinnamon section */
 }
 
+/* Navigation alignment */
 .nav-site:last-of-type {
-    margin-right: auto; 
+    margin-right: auto; /* Pushes the info nav links to the left */
 }
 
 .home-nav {
-    margin-left: auto; 
+    margin-left: auto; /* Pushes home nav to the right */
 }
 
+/* Logo styling */
 .logo {
-    width: 50px;
-    height: 30px;
-    display: none;
-    position: absolute; /* Absolute positioning to center the logo */
-    left: 50%; /* Move the logo to the center of the nav */
-    transform: translateX(-50%); /* Adjust the logo back to perfect center */
+    width: 50px; /* Logo width */
+    height: 30px; /* Logo height */
+    display: none; /* Hidden by default */
+    position: absolute; /* Positions the logo in relation to the nav */
+    left: 50%; /* Centers the logo horizontally */
+    transform: translateX(-50%); /* Further adjusts to center accurately */
 }
 
+/* Styling for links */
 nav a, ul a {
-    color: #000;
-    font-weight: bold;
-    margin: 0 10px;
+    color: #000; /* Black text color */
+    font-weight: bold; /* Makes text bold */
+    margin: 0 10px; /* Adds horizontal spacing between links */
 }
 
 nav a {
-    text-decoration: none; 
+    text-decoration: none; /* Removes underline from links */
 }
 
+/* Grid container styling */
 .circle-container, .circle-container-two {
     grid-template-columns: repeat(6, 1fr); /* Six equal columns */
-    gap: 20px; /* Add spacing between items */
-    justify-content: center; /* Center the grid horizontally */
-    margin: 20px 0; /* Add vertical margin */
-    width: fit-content; /* Shrink the grid to fit its content */
-    margin-left: auto; /* Center horizontally */
-    margin-right: auto; /* Center horizontally */
+    gap: 20px; /* Spacing between grid items */
+    justify-content: center; /* Centers grid horizontally */
+    margin: 20px 0; /* Adds vertical spacing */
+    width: fit-content; /* Adjusts grid size to fit its content */
+    margin-left: auto; /* Centers grid horizontally */
+    margin-right: auto; /* Centers grid horizontally */
 }
 
+/* Centering content inside phone container */
 .phone-container {
-    display: flex;
-    justify-content: center; 
-    align-items: center; 
-    gap: 20px; 
+    display: flex; /* Uses flexbox layout */
+    justify-content: center; /* Centers items horizontally */
+    align-items: center; /* Centers items vertically */
+    gap: 20px; /* Adds spacing between items */
     position: relative;
-    margin: auto; 
+    margin: auto; /* Centers container */
 }
 
+/* Hides elements for mobile view */
 .circle-container, .circle-container-two, #see-more {
-    display: none; 
+    display: none;
 }
 
+/* Button styling */
 button {
-    color:#000;
-    background-color: inherit;
-    border: 2px solid #4b4343;
-    border-radius: 20px;  
-    padding: 6px 10px; 
-    font-weight: bold; 
+    color: #000; /* Black text color */
+    background-color: inherit; /* Inherits background from parent */
+    border: 2px solid #4b4343; /* Dark border color */
+    border-radius: 20px; /* Rounded corners */
+    padding: 6px 10px; /* Button padding */
+    font-weight: bold; /* Bold text */
 }
 
+/* Circle and slideshow styling */
 .circle, .mySlides {
-    width: 150px;
-    height: 150px;
-    border: 3px solid #4b4343;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    width: 150px; /* Circle width */
+    height: 150px; /* Circle height */
+    border: 3px solid #4b4343; /* Dark border color */
+    border-radius: 50%; /* Makes it circular */
+    display: flex; /* Uses flexbox */
+    align-items: center; /* Centers items vertically */
+    justify-content: center; /* Centers items horizontally */
 }
 
+/* Styling for links in various containers */
 .nav-site a, .home-nav, footer a {
     display: inline-block;
 }
 
+/* Hover effects for interactive elements */
 .circle, .nav-site a, .home-nav, button, footer a, .click-img {
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out; /* Adds a smooth scaling animation */
 }
 
 .circle:hover, .circle:focus, .nav-site a:hover, .nav-site a:focus, .home-nav:hover, .home-nav:focus, footer a:hover, 
-footer a:focus, .click-img:hover, .click-img:focus {  
-    transform: scale(1.1);
+footer a:focus, .click-img:hover, .click-img:focus {
+    transform: scale(1.1); /* Enlarges the element on hover */
 }
 
-button:hover, button:focus, button:hover, button:focus, .facts:hover, .more-facts:hover, .details:hover, 
-.embedded-video:hover, .jellycat:hover, .spotify:hover, .links:hover {
-    transform: scale(1.03);
+button:hover, button:focus, .facts:hover, .more-facts:hover, .details:hover, .embedded-video:hover, .jellycat:hover, 
+.spotify:hover, .links:hover {
+    transform: scale(1.03); /* Slightly enlarges button and content items on hover but by not as much*/
 }
 
-
+/* Styling for the containers */
 .facts, .details, .video, .more-facts, .links {
-    margin: 20px auto;
-    padding: 10px;
-    width: 80%;
-    text-align: left;
+    margin: 20px auto; /* Centers content vertically and horizontally */
+    padding: 10px; /* Adds padding inside content containers */
+    width: 80%; /* Limits width to 80% of parent */
+    text-align: left; /* Left-aligns text */
 }
 
-/* Apply common styles to containers */
+/* Common styles for containers */
 .facts, .more-facts, .details, .embedded-video, .jellycat, .spotify, .links {
-    transition: transform 0.4s ease, box-shadow 0.4s ease; 
-    border-radius: 10px; 
+    transition: transform 0.4s ease, box-shadow 0.4s ease; /* Adds scaling and shadow animation */
+    border-radius: 10px; /* Rounded corners */
 }
 
-/* Hover effect for scaling and box shadow */
+/* Hover effects for scaling and shadow */
 .facts:hover, .more-facts:hover, .details:hover, .embedded-video:hover, .jellycat:hover, .spotify:hover, .links:hover {
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Add a stronger shadow */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Adds shadow effect on hover */
 }
 
+/* Footer styling */
 footer {
-    background-color: #f4f4f4;
-    padding: 10px; 
-    bottom: 0;
-    box-sizing: border-box; /* Ensures padding is included in the total width */
-    text-align: right; /* Align text to the right */
+    background-color: #f4f4f4; /* Light gray background */
+    padding: 10px; /* Padding inside footer */
+    bottom: 0; /* Aligns footer at the bottom */
+    box-sizing: border-box; /* Includes padding in element width */
+    text-align: right; /* Aligns text to the right */
 }
 
 footer a {
-    text-decoration: none;
-    font-weight: bold;
-    color: #000;
-    margin-right: 10px; 
+    text-decoration: none; /* Removes underline from footer links */
+    font-weight: bold; /* Makes text bold */
+    color: #000; /* Black text color */
+    margin-right: 10px; /* Adds spacing between footer links */
 }
 
+/* Styling for embedded video */
 .embedded-video {
-    width: 350; 
-    height: 200px;
+    width: 350; /* Video width */
+    height: 200px; /* Video height */
 }
 
+/* Centering for video container */
 .video {
     text-align: center;
 }
 
-.spotify{
-    border-radius: 12px;   
-    width: 300px; 
-    height: 352px;
+/* Styling for Spotify widget */
+.spotify {
+    border-radius: 12px; /* Rounded corners */
+    width: 300px; /* Widget width */
+    height: 352px; /* Widget height */
 }
 
-.jellycat{
-    width: 300px; 
-    height: 400px;
-    border-radius: 20px; 
+/* Styling for Jellycat widget */
+.jellycat {
+    width: 300px; /* Widget width */
+    height: 400px; /* Widget height */
+    border-radius: 20px; /* Rounded corners */
 }
 
+/* Styling for "bear think" images */
 .bearthink {
-    width: 438px;
-    height: 653px; 
+    width: 438px; /* Image width */
+    height: 653px; /* Image height */
 }
 
 .thinkcloud {
-    display:none;
-    width: 366px; 
-    height: 243px;
+    display: none; /* Hidden by default */
+    width: 366px; /* Image width */
+    height: 243px; /* Image height */
 }
 
+/* Grid layout for containers */
 .container {
-    display: grid;
-    grid-template-columns: 1fr auto 1fr; /* Three columns: left clickable section, bear area, right clickable section */
-    align-items: center; /* Align items vertically */
-    gap: 20px; /* Add spacing between columns */
+    display: grid; /* Uses grid layout */
+    grid-template-columns: 1fr auto 1fr; /* Defines three columns */
+    align-items: center; /* Centers items vertically */
+    gap: 20px; /* Adds spacing between columns */
 }
 
-.click-img{
-    width: 150px; 
-    height: 130px;
-    padding: 5px;
+/* Styling for clickable images */
+.click-img {
+    width: 150px; /* Image width */
+    height: 130px; /* Image height */
+    padding: 5px; /* Adds padding around image */
 }
 
+/* Grid layout for hidden sections */
 .clickable-section {
-    display: none; 
-    grid-template-columns: repeat(1, 1fr);
-    justify-items: center; /* Center content horizontally */
-    gap: 10px; /* Space between each item */
+    display: none; /* Hidden by default */
+    grid-template-columns: repeat(1, 1fr); /* Single-column layout */
+    justify-items: center; /* Centers content horizontally */
+    gap: 10px; /* Adds spacing between items */
 }
 
+/* Positioning for overlay images */
 .cloud-container {
-    position: relative; /* Ensure the thought bubble container is a positioning context */
+    position: relative; /* Creates a positioning context */
 }
 
 .overlay-image {
-    position: absolute;
-    top: 40%; /* Adjust this value to align the image vertically */
-    left: 60%; /* Adjust this value to align the image horizontally */
-    transform: translate(-50%, -50%); /* Center the overlay image */
-    pointer-events: auto; /* Make sure clicks pass through the overlay image */
-    width: 180px; 
-    height: 130px;
+    position: absolute; /* Positions overlay image */
+    top: 40%; /* Vertical position adjustment */
+    left: 60%; /* Horizontal position adjustment */
+    transform: translate(-50%, -50%); /* Centers overlay */
+    pointer-events: auto; /* Ensures clicks work on the overlay */
+    width: 180px; /* Overlay width */
+    height: 130px; /* Overlay height */
 }
 
+/* Responsive design: larger screens */
 @media (min-width: 720px) {
     .logo {
-        display: block;
+        display: block; /* Displays logo on larger screens */
     }
 
-    #see-more, .thinkcloud{
-        display: inline-block; 
+    #see-more, .thinkcloud {
+        display: inline-block; /* Displays elements on larger screens */
     }
 
     .phone-container {
-        display: none;
+        display: none; /* Hides phone container on larger screens */
     }
 
     .circle-container, .clickable-section {
-        display: grid; 
+        display: grid; /* Displays grids on larger screens */
     }
 
     .embedded-video {
-        width: 800px; 
+        width: 800px; /* Larger video size */
         height: 500px;
     }
 
-    .spotify{
-        width: 800px; 
+    .spotify {
+        width: 800px; /* Larger Spotify widget */
     }
-    
-    .jellycat{
-        width: 450px; 
+
+    .jellycat {
+        width: 450px; /* Larger Jellycat widget */
         height: 550px;
     }
 
     .bearthink {
-        width: 338px;
-        height: 453px; 
+        width: 338px; /* Smaller bear think image for larger screens */
+        height: 453px;
     }
 }
 
+/* Reduced motion preferences */
 @media (prefers-reduced-motion: reduce) {
     .circle, .nav-site a, .home-nav, button, footer a, .click-img, .facts, .more-facts, .details, .embedded-video, 
     .jellycat, .spotify, .links {
-        transition: none;
-    }
-    
-    .circle:hover, .circle:focus, .nav-site a:hover, .nav-site a:focus, .home-nav:hover, .home-nav:focus, footer a:hover, 
-    footer a:focus, .click-img:hover, .click-img:focus, button:hover, button:focus, button:hover, button:focus, .facts:hover, 
-    .more-facts:hover, .details:hover, .embedded-video:hover, .jellycat:hover, .spotify:hover, .links:hover {
-        transform: none;
-    }
-    
-    /* Hover effect for scaling and box shadow */
-    .facts:hover, .more-facts:hover, .details:hover, .embedded-video:hover, .jellycat:hover, .spotify:hover, .links:hover {
-        box-shadow: none; /* Add a stronger shadow */
+        transition: none; /* Disables animations */
     }
 
-    .spotify, .reduce{
-        display: none; 
+    .circle:hover, .circle:focus, .nav-site a:hover, .nav-site a:focus, .home-nav:hover, .home-nav:focus, footer a:hover, 
+    footer a:focus, .click-img:hover, .click-img:focus, button:hover, button:focus, .facts:hover, .more-facts:hover, 
+    .details:hover, .embedded-video:hover, .jellycat:hover, .spotify:hover, .links:hover {
+        transform: none; /* Disables scaling */
+    }
+
+    .facts:hover, .more-facts:hover, .details:hover, .embedded-video:hover, .jellycat:hover, .spotify:hover, .links:hover {
+        box-shadow: none; /* Removes shadow effect */
+    }
+
+    .spotify, .reduce {
+        display: none; /* Hides specific elements */
     }
 }
 
-@media (prefers-color-scheme: dark){
-    .logo {
-        filter: invert(1); /* Invert the logo colors */
+/* Dark mode preferences */
+@media (prefers-color-scheme: dark) {
+    #panda-logo {
+        filter: invert(1); /* Inverts colors for logo */
     }
 
     .panda-body {
-        background-color: #414040; 
+        background-color: #414040; /* Dark background for panda section */
     }
 
-    .panda-body, .panda-see, #panda-nav, #panda-nav a, #panda-home, .panda-link a, #panda-footer{
-        color: #ffffff; /* Change the font color to white */
+    .panda-body, .panda-see, #panda-nav, #panda-nav a, #panda-home, .panda-link a, #panda-footer {
+        color: #ffffff; /* White text for dark mode */
     }
 
     .panda-nav, .panda-footer {
-        background-color: #1f1f1f; /* Set a darker shade for the nav and footer */
+        background-color: #1f1f1f; /* Darker background for nav and footer */
     }
 
     button {
-        border-color: #ffffff;
+        border-color: #ffffff; /* White border for buttons */
     }
 }
